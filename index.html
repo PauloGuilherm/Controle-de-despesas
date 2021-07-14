@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle financeiro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="biblioteca/bootstrap-4.3.1-dist/css/bootstrap.css">
+
+</head>
+<body>
+    <div id="mae">
+        <div id="section">
+            <h1>Controle de despesas</h1>
+            <label></label>
+                <h3>Saldo Atual
+                <div id="saldoAtual">
+                    R$ 0.00
+                </div>
+            </h3>
+            <div id="receitas-despesas">
+                <div class="d-flex align-items-center">
+                    <div id="receitas">
+                        RECEITAS
+                        <label id="saidaReceitas">R$0.00</label>
+                    </div>
+                    <div id="despesas">
+                        DESPESAS
+                        <label id="saidaDespesas">R$0.00</label>
+                    </div>
+                </div>
+              
+            </div>
+            <label></label>
+            <div id="transacoes">
+                Transações
+            </div>
+            <div id="saidaTran">
+            </div> 
+            <label></label>
+            <div id="addTransacoes">
+                Adicionar transação
+            </div>
+           <label></label>
+            <div class="form-group">
+                <label for="usr">Nome:</label>
+                <input type="text" id="nome" placeholder="Nome da transação" class="form-control" id="usr">
+              </div>
+            <div class="form-group">
+                <label for="usr">Valor:</label>
+                <input type="number" id="valor" placeholder="Valor da transação" class="form-control">
+                <label for="usr">Negativo para despesas e Positivo para receitas</label>
+              </div>
+
+            <div id="botton">
+                <button type="button" class="btn btn-outline-info btn-block" id="adicionar">Adicionar</button>
+            </div>
+        </div>
+    </div>
+    <script src="biblioteca/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
